@@ -3,7 +3,7 @@ package com.yandrorb.biblioteca.modelo;
 import java.util.List;
 
 public class Usuario implements Identificable {
-    private String identificador;
+    private final String identificador;
     private String nombre;
     private String apellido;
     private String email;
