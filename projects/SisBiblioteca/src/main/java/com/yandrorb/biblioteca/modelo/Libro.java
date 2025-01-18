@@ -95,16 +95,6 @@ public class Libro implements Identificable {
     public String getIdentificador() {
         return this.identificador;
     }
-    public void prestar(){
-        if(this.copiasDisponibles>0) this.copiasDisponibles--;
-    }
-    public void devolver(){
-        if(this.copiasDisponibles<this.numeroCopias) this.copiasDisponibles++;
-    }
-
-    public EnumEstado estaDisponible(){
-        return this.copiasDisponibles>0?EnumEstado.DISPONIBLE:EnumEstado.PRESTADO;
-    }
 
     public String getISBN() {
         return ISBN;
@@ -112,5 +102,19 @@ public class Libro implements Identificable {
 
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
+    }
+    public void prestar(){
+        if(this.copiasDisponibles>0) this.copiasDisponibles--;
+    }
+    public void devolver(){
+        if(this.copiasDisponibles<this.numeroCopias) this.copiasDisponibles++;
+    }
+    public EnumEstado estaDisponible(){
+        return this.copiasDisponibles>0?EnumEstado.DISPONIBLE:EnumEstado.PRESTADO;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%-10s%-30s%-30s%-30s%-30s%-30s%-30s%-30s%-30s",this.identificador,this.titulo,this.autor,this.editorial,this.fechaPublicacion,this.ISBN,this.genero,this.numeroCopias,this.copiasDisponibles);
     }
 }
