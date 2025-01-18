@@ -1,6 +1,7 @@
 package com.yandrorb.biblioteca.modelo;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Libro implements Identificable {
     private final String identificador;
@@ -115,6 +116,8 @@ public class Libro implements Identificable {
 
     @Override
     public String toString(){
-        return String.format("%-10s%-30s%-30s%-30s%-30s%-30s%-30s%-30s%-30s",this.identificador,this.titulo,this.autor,this.editorial,this.fechaPublicacion,this.ISBN,this.genero,this.numeroCopias,this.copiasDisponibles);
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String fechaFormateada=fechaPublicacion!=null?fechaPublicacion.format(formato):"";
+        return String.format("%-10s%-30s%-30s%-30s%-30s%-30s%-30s%-30s%-30s",this.identificador,this.titulo,this.autor,this.editorial,fechaFormateada,this.ISBN,this.genero,this.numeroCopias,this.copiasDisponibles);
     }
 }
