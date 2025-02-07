@@ -1,0 +1,15 @@
+identificador,titulo,autor,editorial,fechaPublicacion,ISBN,genero,numeroCopias,copiasDisponibles
+1,El misterio del bosque,Juan Pérez,Editorial Alfa,1985-06-15,123-4567-890-1,Ficción,10,7
+2,Viaje al centro del alma,María López,Editorial Beta,1999-03-22,234-5678-901-2,Drama,8,5
+3,La sombra del viento,Gabriel García Márquez,Editorial Gama,2005-11-10,345-6789-012-3,Aventura,12,9
+4,Cien años de soledad,George Orwell,Editorial Delta,1970-08-05,456-7890-123-4,Ciencia Ficción,15,10
+5,El principito,Jane Austen,Editorial Omega,1943-04-06,567-8901-234-5,Fantasía,20,18
+6,1984,F. Scott Fitzgerald,Editorial Alfa,1949-06-08,678-9012-345-6,null,5,2
+7,Orgullo y prejuicio,Harper Lee,Editorial Beta,1813-01-28,789-0123-456-7,Drama,7,3
+8,El gran Gatsby,Isabel Allende,Editorial Gama,1925-04-10,890-1234-567-8,Ficción,9,6
+9,Matar a un ruiseñor,J.K. Rowling,Editorial Delta,1960-07-11,901-2345-678-9,Aventura,6,4
+10,Don Quijote,Suzanne Collins,Editorial Omega,1605-01-16,123-3456-789-0,Fantasía,25,20
+11,Crónica de una muerte anunciada,Juan Pérez,Editorial Alfa,1981-03-18,234-4567-890-1,null,10,8
+12,El alquimista,María López,Editorial Beta,1988-05-01,345-5678-901-2,Ficción,14,12
+13,La casa de los espíritus,Gabriel García Márquez,Editorial Gama,1982-09-15,456-6789-012-3,Drama,11,7
+14,Los juegos del hambre,George Orwell,Editorial Delta,2008-09-14,567-7890-123-4,Ciencia Ficción,18,15

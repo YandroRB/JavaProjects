@@ -1,9 +1,9 @@
 package com.yandrorb.biblioteca.modelo;
 
 public enum EnumTipoU {
-    ESTUDIANTE(3),
+    ESTUDIANTE(5),//3
     PROFESOR(5),
-    EXTERNO(1);
+    EXTERNO(5);//1
 
     final int cantidadPrestamos;
     EnumTipoU(int cantidadPrestamos){

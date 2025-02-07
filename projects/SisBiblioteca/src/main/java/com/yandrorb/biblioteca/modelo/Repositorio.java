@@ -1,5 +1,7 @@
 package com.yandrorb.biblioteca.modelo;
 
+import com.yandrorb.biblioteca.excepciones.NoElementosException;
+
 import java.util.ArrayList;
 
 import java.util.Collections;
@@ -9,6 +11,10 @@ public class Repositorio<O extends Identificable> implements Gestionable<Reposit
     private final List<O>  lista;
     public Repositorio(){
         lista=new ArrayList<>();
+    }
+    public void setLista(List<O> lista){
+        this.lista.clear();
+        this.lista.addAll(lista);
     }
     public List<O> getLista(){
         return Collections.unmodifiableList(lista);
@@ -34,11 +40,16 @@ public class Repositorio<O extends Identificable> implements Gestionable<Reposit
     }
 
     @Override
-    public String listar() {
+    public String listar() throws NoElementosException {
         StringBuilder sb = new StringBuilder();
+        if (lista.isEmpty()) throw new NoElementosException("No hay elementos que listar.");
         for(O o:lista){
             sb.append(o.toString()).append("\n");
         }
         return sb.toString();
+    }
+    @Override
+    public Boolean estaVacio(){
+        return lista.isEmpty();
     }
 }

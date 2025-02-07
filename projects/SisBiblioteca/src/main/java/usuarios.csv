@@ -1,0 +1,7 @@
+identificador,nombre,apellido,email,telefono,tipoUsuario,listPrestamos
+1,Carlos,Gómez,carlos.gomez@example.com,3001234567,ESTUDIANTE,5-10-7
+2,María,López,null,3109876543,PROFESOR,3-8-12-15-20
+3,Juan,Pérez,juan.perez@example.com,3204567890,EXTERNO,1
+4,Laura,Ramírez,null,3007654321,ESTUDIANTE,4-9-14
+5,Andrés,Martínez,andres.martinez@example.com,3101239876,PROFESOR,2-11-16-18-25
+6,Sofía,Fernández,null,3207890123,EXTERNO,6
