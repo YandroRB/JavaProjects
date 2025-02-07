@@ -27,6 +27,7 @@ replay_pid*
 /bin/
 /target/
 /build/
+/out/
 
 # Configuración de herramientas
 /.idea/
